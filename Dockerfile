@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get -y install wget python git automake libtool build-essential cmake libglib2.0-dev closure-compiler
+RUN apt-get -y install vim wget python git automake libtool build-essential cmake libglib2.0-dev closure-compiler
 
 RUN wget https://s3.amazonaws.com/mozilla-games/emscripten/releases/emsdk-portable.tar.gz
 RUN tar xzvf emsdk-portable.tar.gz
