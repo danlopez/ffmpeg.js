@@ -307,8 +307,8 @@ build/ffmpeg-mp4/ffmpeg.bc: $(MP4_SHARED_DEPS)
 EMCC_COMMON_ARGS = \
 	--closure 1 \
 	-s TOTAL_MEMORY=268435456 \
-	-s BINARYEN=1
-	-s WASM=1
+	-s BINARYEN=1 \
+	-s WASM=1 \
 	-s ALLOW_MEMORY_GROWTH=1 \
 	-O2 --memory-init-file 0 \
 	--pre-js $(PRE_JS) \
